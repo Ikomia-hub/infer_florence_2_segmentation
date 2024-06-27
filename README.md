@@ -20,7 +20,7 @@
 </p>
 
 Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks. 
-With this algorithm you can leverage Florence-2 for image segmentation:
+With this algorithm you can leverage Florence-2 for instance segmentation:
 
 ![all outputs](https://github.com/Ikomia-hub/infer_florence_2_segmentation/images/output.jpg)
 
@@ -51,7 +51,7 @@ algo = wf.add_task(name="infer_florence_2_segmentation", auto_connect=True)
 wf.run_on(url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/car.jpg?download=true")
 
 # Display results
-display(algo.get_image_with_graphics())
+display(algo.get_image_with_mask_and_graphics())
 ```
 
 ## :sunny: Use with Ikomia Studio
@@ -102,7 +102,7 @@ algo.set_parameters({
 wf.run_on(url = "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/car.jpg?download=true")
 
 # Display results
-display(algo.get_image_with_graphics())
+display(algo.get_image_with_mask_and_graphics())
 ```
 
 ## :mag: Explore algorithm outputs

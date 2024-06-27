@@ -40,6 +40,7 @@ pip install ikomia
 
 ```python
 from ikomia.dataprocess.workflow import Workflow
+from ikomia.utils.displayIO import display
 
 # Init your workflow
 wf = Workflow()
@@ -80,6 +81,7 @@ Optionally, you can load a custom model:
 
 ```python
 from ikomia.dataprocess.workflow import Workflow
+from ikomia.utils.displayIO import display
 
 # Init your workflow
 wf = Workflow()

@@ -260,6 +260,7 @@ class InferFlorence2SegmentationFactory(dataprocess.CTaskFactory):
         self.info.keywords = "Florence,Microsoft,Segmentation,Unified,Pytorch"
         self.info.algo_type = core.AlgoType.INFER
         self.info.algo_tasks = "INSTANCE_SEGMENTATION"
+        self.info.os = utils.OSType.LINUX
 
     def create(self, param=None):
         # Create algorithm object
